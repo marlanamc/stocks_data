@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <body>
+        <h1>Biggest Stock Market Gains</h1>
+
+        {% for table in tables %}
+        {{ table|safe }}
+        {% endfor %}
+    </body>
+
+{% endblock content %}

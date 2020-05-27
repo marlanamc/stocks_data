@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <head>
+        <h1>Top Companies of the S&P 500</h1>
+        <h4>Last 100 Days - % Change since the first day</h4>
+    </head>
+
+    <body>
+        <img src="data:image/png;base64,{{ result }}" width="500">
+        <p>Companies:
+            <ul>
+                <li>AAPL = Apple</li>
+                <li>AMZN = Amazon</li>
+                <li>GOOG = Google</li>
+                <li>MSFT = Microsoft</li>
+                <li>TSLA = Tesla</li>
+            </ul>
+        </p>
+    </body>
+
+{% endblock content %}
+

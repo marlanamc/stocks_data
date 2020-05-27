@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+<main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Welcome</h1>
+          <p>This site will attempt to examine the stock market's trends in order to help you to become a better investor.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>S&P 500 Top Companies</h2>
+            <p> Percent Change</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('plot_html') }}" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Biggest Gainers</h2>
+            <p>Stocks that have seen the highest percent increase</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('get_gains') }}" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Biggest Losers</h2>
+            <p>Stocks that have seen the highest percent decrease</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('get_losses') }}" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+{% endblock content %}
